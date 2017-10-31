@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonmid.contactosbasededatos.ContactsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edt_1"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Buscar aqui"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/edt_1"
+            android:text="BUSCAR"
+            android:onClick="listContactsIndex"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_rv_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="68dp"
+            android:layout_below="@id/edt_1">
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#CEEBF2"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/id_btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_btn_search"
+                android:layout_weight="1"
+                android:onClick="onClickShowWindowSearch"
+                android:theme="@style/RaisedButtonDark"/>
+
+            <Button
+                android:id="@+id/id_btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_btn_register"
+                android:layout_weight="1"
+                android:onClick="onClickShowWindowRegister"
+                android:theme="@style/RaisedButtonDark"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

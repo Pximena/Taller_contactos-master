@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_item"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/id_tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jonathan Mideros"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TELEFONO:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/id_tv_item_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3103012972"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/id_tv_item_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jamideros@hotmail.com"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

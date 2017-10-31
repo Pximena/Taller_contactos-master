@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContactosBaseDeDatos</string>
+    <string name="str_btn_search">Buscar contacto</string>
+    <string name="str_btn_register">Registrar contacto</string>
+</resources>
